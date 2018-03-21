@@ -99,19 +99,19 @@ app.put("/blogs/:id", function(req, res){
     
 });
 
-//DELETE ROUTE
-app.delete("/blogs/:id", function(req, res){
-    //DESTROY BLOGPOST
-    blog.findByIdAndRemove(req.params.id, function(error, blogRemoved){
-        if(error){
-            console.log(error);
-            res.redirect("/blogs");
-        }else{
-            res.redirect("/blogs");
-        }
-    })
+// //DELETE ROUTE
+// app.delete("/blogs/:id", function(req, res){
+//     //DESTROY BLOGPOST
+//     blog.findByIdAndRemove(req.params.id, function(error, blogRemoved){
+//         if(error){
+//             console.log(error);
+//             res.redirect("/blogs");
+//         }else{
+//             res.redirect("/blogs");
+//         }
+//     })
     
-});
+// });
 
 
 app.listen(process.env.PORT, process.env.IP, function(){
