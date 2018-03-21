@@ -12,7 +12,9 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(expressSanitizer());
 app.use(methodOverride("_method"));
 
-mongoose.connect("mongodb://localhost/restful_blog_app");
+mongoose.connect("mongodb://odin:mindfreak2@ds121189.mlab.com:21189/blog_app");
+// mongoose.connect("mongodb://localhost/restful_blog_app");
+// mongodb://odin:mindfreak2@ds121189.mlab.com:21189/blog_app
 
 //MONGOOSE/MODEL CONFIG.
 var blogSchema = new mongoose.Schema({
