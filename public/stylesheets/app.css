@@ -1,0 +1,16 @@
+body{
+    background-color: gray;
+}
+
+i.icon{
+    font-size: 2em;    
+}
+
+body{
+    margin: 7em auto;
+}
+
+
+#delete{
+    display: inline;
+}
